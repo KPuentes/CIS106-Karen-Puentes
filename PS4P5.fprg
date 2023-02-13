@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-12 11:48:05 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTkyOUFFVlE7MjAyMy0wMi0xMjsxMTo0NDo1NCBQTTszMzE1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTkyOUFFVlE7MjAyMy0wMi0xMjsxMTo0ODowNSBQTTsxOzM0MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="FC" type="Real" array="False" size=""/>
+            <declare name="PPU" type="Real" array="False" size=""/>
+            <declare name="CPU" type="Real" array="False" size=""/>
+            <declare name="Breakeven" type="Real" array="False" size=""/>
+            <input variable="FC"/>
+            <input variable="PPU"/>
+            <input variable="CPU"/>
+            <assign variable="Breakeven" expression="FC / (PPU - CPU)"/>
+            <output expression="&quot;The breakeven point for this company is at &quot; &amp;Breakeven &amp;&quot; units.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

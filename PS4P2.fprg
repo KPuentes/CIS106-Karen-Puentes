@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-12 09:35:55 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUpRSzAyOEc7MjAyMy0wMi0xMjswOToyNzowOSBQTTszMzEz"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUpRSzAyOEc7MjAyMy0wMi0xMjswOTozNTo1NSBQTTsxOzM0MjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PricePerShare" type="Real" array="False" size=""/>
+            <declare name="CurrentPrice" type="Real" array="False" size=""/>
+            <declare name="Quantity" type="Real" array="False" size=""/>
+            <declare name="ValueChange" type="Real" array="False" size=""/>
+            <input variable="PricePerShare"/>
+            <input variable="CurrentPrice"/>
+            <input variable="Quantity"/>
+            <assign variable="ValueChange" expression="CurrentPrice - PricePerShare"/>
+            <output expression="&quot;Your net profit/loss is $&quot; &amp;ValueChange" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

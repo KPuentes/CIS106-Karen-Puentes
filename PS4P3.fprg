@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-12 10:52:29 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTkyOUFFVlE7MjAyMy0wMi0xMjsxMDoyNzo1MCBQTTszMzEx"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTkyOUFFVlE7MjAyMy0wMi0xMjsxMDo1MjoyOSBQTTsxOzM0MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <declare name="TipPercent" type="Real" array="False" size=""/>
+            <declare name="TotalWTip" type="Real" array="False" size=""/>
+            <declare name="Tip" type="Real" array="False" size=""/>
+            <input variable="Total"/>
+            <input variable="TipPercent"/>
+            <assign variable="Tip" expression="Total * TipPercent"/>
+            <assign variable="TotalWTip" expression="Total * TipPercent"/>
+            <output expression="&quot;With &quot; &amp;TipPercent &amp;&quot;Tip:&quot;&#13;&#10;&amp;&quot;Total:$&quot; &amp;Total&#13;&#10;&amp;&quot;Tip:$&quot; &amp;Tip&#13;&#10;&amp;&quot;Total with tip:$&quot; &amp;TotalWTip" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
