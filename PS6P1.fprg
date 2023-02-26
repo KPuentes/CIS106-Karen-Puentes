@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-24 04:54:55 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFPN0VVMTM7MjAyMy0wMS0yNDswNDo0NzozMCBQTTszMzIw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFPN0VVMTM7MjAyMy0wMS0yNDswNDo1NDo1NSBQTTsxOzM0MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="OrigTotal" type="Real" array="False" size=""/>
+            <declare name="TotalDisc" type="Real" array="False" size=""/>
+            <declare name="FinTotal" type="Real" array="False" size=""/>
+            <input variable="OrigTotal"/>
+            <assign variable="TotalDisc" expression="OrigTotal * 0.40"/>
+            <assign variable="FinTotal" expression="OrigTotal - TotalDisc"/>
+            <output expression="&quot;Today's 40% off promotion took off a total of $&quot; &amp;TotalDisc &amp;&quot; meaning you now owe $&quot; &amp;FinTotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
