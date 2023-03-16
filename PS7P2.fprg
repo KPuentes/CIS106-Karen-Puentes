@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-16 02:59:23 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTA3RVJBMzU7MjAyMy0wMy0xNjswMjozOTozOSBQTTszMjg1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTA3RVJBMzU7MjAyMy0wMy0xNjswMjo1OToyMyBQTTsyOzMzODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="startval" type="Real" array="False" size=""/>
+            <declare name="stopval" type="Real" array="False" size=""/>
+            <declare name="incrementval" type="Real" array="False" size=""/>
+            <output expression="&quot;Input your starting value&quot;" newline="True"/>
+            <input variable="startval"/>
+            <output expression="&quot;Input your ending value&quot;" newline="True"/>
+            <input variable="stopval"/>
+            <output expression="&quot;Input the increment you'd like to increase by&quot;" newline="True"/>
+            <input variable="incrementval"/>
+            <while expression="startval &lt;= stopval">
+                <output expression="&quot;loop increment&quot; &amp; startval" newline="True"/>
+                <assign variable="startval" expression="startval + incrementval"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

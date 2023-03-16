@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-16 04:03:14 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTA3RVJBMzU7MjAyMy0wMy0xNjswMzo1MzowNSBQTTszMjc1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTA3RVJBMzU7MjAyMy0wMy0xNjswNDowMzoxNCBQTTsxOzMzNzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="continue" type="String" array="False" size=""/>
+            <output expression="&quot;Enter response&quot;" newline="True"/>
+            <input variable="continue"/>
+            <assign variable="continue" expression="&quot;yes&quot;"/>
+            <while expression="continue = &quot;yes&quot;">
+                <declare name="lstnm" type="String" array="False" size=""/>
+                <output expression="&quot;enter last name&quot;" newline="True"/>
+                <input variable="lstnm"/>
+                <declare name="hours" type="Real" array="False" size=""/>
+                <output expression="&quot;Enter hours worked&quot;" newline="True"/>
+                <input variable="hours"/>
+                <declare name="wage" type="Real" array="False" size=""/>
+                <output expression="&quot;Enter your hourly wage&quot;" newline="True"/>
+                <input variable="wage"/>
+                <declare name="grosspay" type="Real" array="False" size=""/>
+                <if expression="hours &gt;= 40">
+                    <then>
+                        <assign variable="grosspay" expression="(40 * wage) + ((hours - 40)*1.5)"/>
+                    </then>
+                    <else>
+                        <assign variable="grosspay" expression="wage * hours"/>
+                    </else>
+                </if>
+                <output expression="&quot;Your gross pay is $&quot; &amp;grosspay" newline="True"/>
+                <output expression="&quot;Enter response&quot;" newline="True"/>
+                <input variable="continue"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
