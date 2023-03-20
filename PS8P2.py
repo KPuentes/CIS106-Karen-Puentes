@@ -1,0 +1,15 @@
+
+a=1
+b=1
+
+print("Here are the first 20 numbers in the fibonacci sequence")
+
+print(a)
+print(b)
+
+for x in range (1,21,1):
+  c=a+b
+  print(c)
+  a=b
+  b=c
+  
